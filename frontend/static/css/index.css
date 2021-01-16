@@ -19,3 +19,24 @@ body {
 .landing-page-logo {
     width: 100px;
 }
+
+/* SEARCH BAR */
+form.search-bar {
+    position: relative;
+    width: 70%;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+
+  form.search-bar input {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
