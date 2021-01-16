@@ -1,6 +1,14 @@
 body {
     font-family: 'Roboto';
     font-weight: 300;
+    padding: 100px;
+    color: white;
+    height: 100%;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: 300;
 }
 
 .half {
@@ -16,6 +24,41 @@ body {
     right: 0;
 }
 
+.login-button {
+    display: table;
+    margin: 20% auto;
+    font-weight: 300;
+}
+
 .landing-page-logo {
-    width: 100px;
+    width: 40%;
+    margin: 10% 30% 0 30%;
+    display: block;
+}
+
+.landing-page-image {
+    top: 0;
+    left: 0;
+    position: absolute;
+    position: fixed;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.slogan {
+    font-size: 13pt;
+    color: #b5b5b5;
+    font-weight: 400;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.primary-button {
+    background-color: #1DB954;
+    border-radius: 5px;
+    padding: 20px 60px;
+    font-size: 17pt;
+    cursor: pointer;
 }
