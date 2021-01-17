@@ -1,9 +1,11 @@
 body {
     font-family: 'Roboto';
     font-weight: 300;
-    padding: 100px;
     color: white;
     height: 100%;
+    width: 100%;
+    background-color: #342D30;
+    position: fixed;
 }
 
 h1 {
@@ -16,9 +18,7 @@ h1 {
 }
 
 .login {
-    background-color: #342D30;
     height: 100%;
-    color: white;
     position: absolute;
     top: 0;
     right: 0;
@@ -73,16 +73,47 @@ form.search-bar {
     margin: 30px auto 20px auto;
     background: #fff;
     padding: 15px;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    border-radius: 30px;
   }
 
   form.search-bar input {
-    width: 100%;
+    width: 70%;
     border: none;
     padding: 4px;
     outline: none;
     font-size: 1.2em;
     font-family: inherit;
     resize: none;
+    display: block;
+  }
+
+  form.search-bar .search-icon {
+      float: left;
+      font-size: 2em;
+  }
+
+  .playlist-grid {
+      height: 100%;
+      margin-bottom: 5%;
+  }
+
+  .playlist-card {
+      max-width: 345px;
+      width: 90%;
+      height: 90%;
+      display: inline-block;
+      border-radius: 0;
+  }
+
+  .playlist-card h2 {
+      padding: 5% 5% 5%;
+
+  }
+
+  .card-title, .MuiCardContent-root {
+    background-color: #1DB954; 
+    color: white;
+    padding: 10px 0;
+    border-radius: 0;
+    height: 30%;
   }

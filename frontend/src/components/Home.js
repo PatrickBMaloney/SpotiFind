@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import SearchIcon from '@material-ui/icons/Search';
+import PlaylistCard from "./PlaylistCard"
+import Grid from '@material-ui/core/Grid';
 
 const Home = () => {
     const [keyWords, setKeyWords] = useState("");
@@ -6,7 +9,7 @@ const Home = () => {
     const handleChange = (event) => {
         const {name, value} = event.target;
 
-        setNote(value);
+        setKeyWords(value);
     };
 
     const handleKeyDown = (event) => {
@@ -22,17 +25,52 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className="home-page">
             <div>
-            <form className="search-bar">
-                <input
-                    name="search"
-                    placeholder="Enter a keyword..."
-                    value={keyWords}
-                    autoComplete="off"
-                    onChange={handleChange}
-                    onKeyDown={handleKeyDown} />
-            </form>
+                <form className="search-bar">
+                    <SearchIcon className="search-icon" color="action" />
+                    <input
+                        name="search"
+                        placeholder="Enter a keyword..."
+                        value={keyWords}
+                        autoComplete="off"
+                        onChange={handleChange}
+                        onKeyDown={handleKeyDown} />
+                </form>
+            </div>
+            <div>
+                <Grid className="playlist-grid" container alignItems="stretch">
+                    <Grid item xs={3} spacing={3} alignItems="stretch"> 
+                        <PlaylistCard 
+                            img="https://townsquare.media/site/812/files/2020/05/Illustrated-album-covers.jpg"
+                            title="Lit"
+                        />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <PlaylistCard 
+                            img="https://www.nme.com/wp-content/uploads/2016/09/2015AlbumMeaningComp_2_240415.jpg"
+                            title="Party"
+                        />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <PlaylistCard 
+                            img="https://i.redd.it/6fz4w2gd9ox01.jpg"
+                            title="Funeral"
+                        />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <PlaylistCard 
+                            img="https://www.yardbarker.com/media/b/8/b8601cf5a1ce6be0421f710c8cdf89f05db3dd97/thumb_16x9/GettyImages-74290244.jpg"
+                            title="Road Trip"
+                        />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <PlaylistCard 
+                            img="https://www.yardbarker.com/media/b/8/b8601cf5a1ce6be0421f710c8cdf89f05db3dd97/thumb_16x9/GettyImages-74290244.jpg"
+                            title="Road Trip"
+                        />
+                    </Grid>
+                </Grid>
             </div>
         </div>
     );
