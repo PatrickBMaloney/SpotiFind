@@ -192,6 +192,7 @@ form.search-bar {
     margin: 100px auto;
     font-size: 12pt;
     font-weight: 300;
+  }
 
 /* SEARCH RESULT */
 .search-results-header {
@@ -221,5 +222,9 @@ form.search-bar {
 
 .MuiIconButton-colorSecondary {
     color: #1DB954 !important;
->>>>>>> 0bc9c867f56258dea39931281584a9ba466d4a38
+}
+
+.submit-button {
+    text-align: center;
+    margin: 10%;
 }

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Room
+from .models import Room#, Song, Playlist
 
 class RoomSerializer(serializers.ModelSerializer):
     class Meta:
@@ -11,3 +11,13 @@ class CreateRoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room
         fields = ('guest_can_pause', 'votes_to_skip')
+
+# class SongSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Song
+#         fields = ('id', 'songName', 'artist')
+
+# class PlaylistSerializer(serializers.ModelSerializers):
+#     class Meta:
+#         model = Playlist
+#         fields = ('songs', 'title')

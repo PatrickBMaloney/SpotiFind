@@ -43,7 +43,7 @@ const Home = () => {
                         onKeyDown={handleKeyDown} />
                 </form>
                 <div className="advanced-search-link">
-                    <a href="">Advanced Search</a>                    
+                    <a href="/advanced-search">Advanced Search</a>                    
                 </div>
             </div>
             <hr />

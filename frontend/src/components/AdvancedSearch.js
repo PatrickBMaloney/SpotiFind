@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import SearchIcon from '@material-ui/icons/Search';
-import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import OptionSlider from '../components/OptionSlider';
+import { green, purple } from '@material-ui/core/colors';
+import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+  
+const theme = createMuiTheme({
+    palette: {
+        primary: green,
+    },
+});
 
 const AdvancedSearch = () => {
     const [keyWords, setKeyWords] = useState("");
@@ -39,10 +47,6 @@ const AdvancedSearch = () => {
         event.preventDefault();
     };
 
-    function valuetext(value) {
-      return `${value}°C`;
-    }
-
     return (
         <div className="advanced-search-page">
             <div>
@@ -63,6 +67,11 @@ const AdvancedSearch = () => {
                 <OptionSlider name="Speechiness" onOptionUpdated={handleOptionChange} />
                 <OptionSlider name="Pace" onOptionUpdated={handleOptionChange} />
                 <OptionSlider name="Popularity" onOptionUpdated={handleOptionChange} />
+            </div>
+            <div className="submit-button">
+                <ThemeProvider theme={theme}>
+                    <Button variant="contained" color="primary">Search</Button>
+                </ThemeProvider>
             </div>
         </div>
     );
