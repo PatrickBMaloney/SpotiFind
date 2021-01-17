@@ -31,6 +31,8 @@ const SearchResults = () => {
     useEffect(() => {
         console.log('insert backend call here');
         const response = axios.get('/api/');
+        // const url = '/playlist/search=' + params.get('search') ;
+        // const response = axios.get(url);
         console.log(response);
       });
 
@@ -69,9 +71,68 @@ const SearchResults = () => {
                                     />
                                 </TableCell>
                             </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
                         </TableBody>
                     </Table>
                 </TableContainer>
+            </div>
+            <div>
+                <div className="primary-button save-button"> Save Playlist </div>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: #342D30;
-    position: fixed;
+    /* position: fixed; */
     margin: 0;
 }
 
@@ -183,3 +183,11 @@ form.search-bar {
   .MuiIconButton-colorSecondary {
       color: #1DB954 !important;
   }
+
+  .save-button {
+    width: 7.5%;
+    text-align: center;
+    margin: 100px auto;
+    font-size: 12pt;
+    font-weight: 300;
+}
