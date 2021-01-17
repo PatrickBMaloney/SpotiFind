@@ -19,7 +19,7 @@ const App = () => {
                 <Home onSearch={handleSearch} />
             </Route>
             <Route path="/searchResults">
-                <SearchResults />
+                <SearchResults onSearch={handleSearch} />
             </Route>
             <Route path = "/advanced-search">
                 <AdvancedSearch onSearch={handleSearch} />
