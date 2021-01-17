@@ -37,11 +37,14 @@ const Home = () => {
                         onChange={handleChange}
                         onKeyDown={handleKeyDown} />
                 </form>
-                    <a href="">Advanced Search</a>
+                <div className="advanced-search-link">
+                    <a href="">Advanced Search</a>                    
+                </div>
             </div>
-            <div>
-                <Grid className="playlist-grid" container alignItems="stretch">
-                    <Grid item xs={3} spacing={3} alignItems="stretch"> 
+            <hr />
+            <div className="playlist-section" justify="space-evenly" alignItems="stretch">
+                <Grid className="playlist-grid" container>
+                    <Grid item xs={3} spacing={3} > 
                         <PlaylistCard 
                             img="https://townsquare.media/site/812/files/2020/05/Illustrated-album-covers.jpg"
                             title="Lit"

@@ -6,6 +6,7 @@ body {
     width: 100%;
     background-color: #342D30;
     position: fixed;
+    margin: 0;
 }
 
 h1 {
@@ -16,6 +17,13 @@ h1 {
 a {
     color: white;
     text-decoration: none;
+}
+
+hr {
+    height: 0;
+    /* width: 50%; */
+    border: none;
+    border-top: 1px solid grey;
 }
 
 .half {
@@ -76,9 +84,9 @@ a {
 form.search-bar {
     position: relative;
     width: 70%;
-    margin: 30px auto 20px auto;
+    margin: 1% auto 0 auto;
     background: #fff;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 30px;
   }
 
@@ -96,6 +104,16 @@ form.search-bar {
   form.search-bar .search-icon {
       float: left;
       font-size: 2em;
+  }
+
+  .advanced-search-link {
+      text-align: right;
+      margin: 3px 15% 1%
+  }
+
+  .playlist-section {
+      padding: 1%;
+      text-align: center;
   }
 
   .playlist-grid {
