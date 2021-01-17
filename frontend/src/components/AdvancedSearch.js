@@ -6,10 +6,10 @@ import OptionSlider from '../components/OptionSlider';
 const AdvancedSearch = () => {
     const [keyWords, setKeyWords] = useState("");
     const [searchOptions, setSearchOptions] = useState({
-        energy: 50,
-        speechiness: 50,
-        pace: 50,
-        popularity: 50
+        Energy: 50,
+        Speechiness: 50,
+        Pace: 50,
+        Popularity: 50
     });
 
     const handleChange = (event) => {
@@ -25,9 +25,9 @@ const AdvancedSearch = () => {
     };
 
     const handleOptionChange = (name, value) => {
-        setSearchOptions((prevSearchOption) => {
+        setSearchOptions((prevSearchOptions) => {
             return {
-                ...prevSearchOption,
+                ...prevSearchOptions,
                 [name]: value
             };
         })
@@ -44,7 +44,7 @@ const AdvancedSearch = () => {
     }
 
     return (
-        <div className="home-page">
+        <div className="advanced-search-page">
             <div>
                 <form className="search-bar">
                     <SearchIcon className="search-icon" color="action" />
@@ -56,13 +56,13 @@ const AdvancedSearch = () => {
                         onChange={handleChange}
                         onKeyDown={handleKeyDown} />
                 </form>
-                <div className="advanced-search-link">
-                    <a href="">Advanced Search</a>                    
-                </div>
             </div>
             <hr />
             <div className="advanced-options">
-                <OptionSlider onOptionUpdated={handleOptionChange} />
+                <OptionSlider name="Energy" onOptionUpdated={handleOptionChange} />
+                <OptionSlider name="Speechiness" onOptionUpdated={handleOptionChange} />
+                <OptionSlider name="Pace" onOptionUpdated={handleOptionChange} />
+                <OptionSlider name="Popularity" onOptionUpdated={handleOptionChange} />
             </div>
         </div>
     );
