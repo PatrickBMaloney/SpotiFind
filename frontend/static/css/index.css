@@ -139,3 +139,9 @@ form.search-bar {
     border-radius: 0;
     height: 30%;
   }
+
+  /* ADVANCED SEARCH */
+  .advanced-options {
+      width: 90%;
+      margin: 2% auto;
+  }

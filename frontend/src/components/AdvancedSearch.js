@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import SearchIcon from '@material-ui/icons/Search';
-import PlaylistCard from "./PlaylistCard"
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Slider from '@material-ui/core/Slider';
+import OptionSlider from '../components/OptionSlider';
 
 const AdvancedSearch = () => {
     const [keyWords, setKeyWords] = useState("");
+    const [searchOptions, setSearchOptions] = useState({
+        energy: 50,
+        speechiness: 50,
+        pace: 50,
+        popularity: 50
+    });
 
     const handleChange = (event) => {
         const {name, value} = event.target;
@@ -20,11 +24,24 @@ const AdvancedSearch = () => {
         }
     };
 
+    const handleOptionChange = (name, value) => {
+        setSearchOptions((prevSearchOption) => {
+            return {
+                ...prevSearchOption,
+                [name]: value
+            };
+        })
+    }
+
     const submitSearch = (event) => {
         props.onSearch(note);
         setKeyWords("");
         event.preventDefault();
     };
+
+    function valuetext(value) {
+      return `${value}°C`;
+    }
 
     return (
         <div className="home-page">
@@ -44,34 +61,8 @@ const AdvancedSearch = () => {
                 </div>
             </div>
             <hr />
-            <div className={classes.root}>
-            <Typography id="discrete-slider" gutterBottom>
-                Temperature
-            </Typography>
-            <Slider
-                defaultValue={30}
-                getAriaValueText={valuetext}
-                aria-labelledby="discrete-slider"
-                valueLabelDisplay="auto"
-                step={10}
-                marks
-                min={10}
-                max={110}
-            />
-            <Typography id="discrete-slider" gutterBottom>
-                Disabled
-            </Typography>
-            <Slider
-                defaultValue={30}
-                getAriaValueText={valuetext}
-                aria-labelledby="discrete-slider"
-                valueLabelDisplay="auto"
-                step={10}
-                marks
-                min={10}
-                max={110}
-                disabled
-            />
+            <div className="advanced-options">
+                <OptionSlider onOptionUpdated={handleOptionChange} />
             </div>
         </div>
     );
