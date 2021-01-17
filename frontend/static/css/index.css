@@ -14,6 +14,14 @@ h1 {
     font-weight: 300;
 }
 
+h2 {
+    font-size: 22pt;
+    font-weight: 300;
+    padding: 55px 50px;
+    text-align: center;
+    color: #342D30;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -173,3 +181,33 @@ form.search-bar {
   .MuiSlider-thumbColorSecondary.Mui-focusVisible, .MuiSlider-thumbColorSecondary:hover {
       box-shadow: 0 0 0 8px  #1DB954;
   }
+
+/* SEARCH RESULT */
+.search-results-header {
+    height: 150px;
+    background: linear-gradient(90deg, rgba(148,191,163,1) 0%, rgba(29,185,84,1) 50%, rgba(81,237,237,1) 100%);
+    margin: 0 10%;
+    border-radius: 15px;
+}
+
+.search-results-bar {
+    margin-top: -25px !important;
+}
+
+.table-container {
+    margin: 100px 10%;
+    width: 80% !important;
+}
+
+.MuiTableCell-head {
+    font-weight: 300 !important;
+    color: white !important;
+}
+
+.MuiTableCell-body {
+    color: white !important;
+}
+
+.MuiIconButton-colorSecondary {
+    color: #1DB954 !important;
+}
