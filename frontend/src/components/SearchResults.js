@@ -64,64 +64,64 @@ const SearchResults = () => {
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>Cars With the Boom</TableCell>
+                                <TableCell>L'Trimm</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>Bring the Noise</TableCell>
+                                <TableCell>Public Enemy</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>Big Poppa</TableCell>
+                                <TableCell>The Notorious B.I.G.</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>King of Rock</TableCell>
+                                <TableCell>Run-DMC</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>Gin and Juice</TableCell>
+                                <TableCell>Snoop Doggy Dogg</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>White Lines (Don't Don't Do It)</TableCell>
+                                <TableCell>Grandmaster and Melle Mel</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>Grindin</TableCell>
+                                <TableCell>Clipse</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>dawpi</TableCell>
-                                <TableCell>dawpi</TableCell>
+                                <TableCell>Passin' Me By</TableCell>
+                                <TableCell>The Pharcyde</TableCell>
                                 <TableCell padding="checkbox">
                                     <Checkbox
                                     />

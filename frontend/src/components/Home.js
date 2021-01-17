@@ -64,7 +64,7 @@ const Home = () => {
                     <Grid item xs={3}>
                         <PlaylistCard 
                             img="https://i.redd.it/6fz4w2gd9ox01.jpg"
-                            title="Funeral"
+                            title="Sadness"
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -75,8 +75,8 @@ const Home = () => {
                     </Grid>
                     <Grid item xs={3}>
                         <PlaylistCard 
-                            img="https://www.yardbarker.com/media/b/8/b8601cf5a1ce6be0421f710c8cdf89f05db3dd97/thumb_16x9/GettyImages-74290244.jpg"
-                            title="Road Trip"
+                            img="https://townsquare.media/site/812/files/2020/03/best-hip-hop-albums-2000.jpg"
+                            title="Run"
                         />
                     </Grid>
                 </Grid>
