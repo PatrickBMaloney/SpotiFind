@@ -22,10 +22,10 @@ const PlaylistCard = (props) => {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt={props.title}
           height="140"
           image={props.img}
-          title="Contemplative Reptile"
+          title={props.title}
         />
         <CardContent className="card-title" style={{padding: 0}}>
           <Typography gutterBottom variant="h5" component="h2">

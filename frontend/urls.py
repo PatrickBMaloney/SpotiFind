@@ -5,4 +5,5 @@ urlpatterns = [
     path('', index),
     path('home', index),
     path('searchResults', index),
+    path('advanced-search', index),
 ]

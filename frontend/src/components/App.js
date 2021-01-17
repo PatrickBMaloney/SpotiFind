@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect,} from "react-ro
 import LandingPage from '../components/LandingPage';
 import Home from "../components/Home";
 import SearchResults from "./SearchResults";
+import AdvancedSearch from "../components/AdvancedSearch";
 
 const App = () => {
     const handleSearch = () => {
@@ -19,6 +20,9 @@ const App = () => {
             </Route>
             <Route path="/searchResults">
                 <SearchResults />
+            </Route>
+            <Route path = "/advanced-search">
+                <AdvancedSearch onSearch={handleSearch} />
             </Route>
         </Router>
     );
