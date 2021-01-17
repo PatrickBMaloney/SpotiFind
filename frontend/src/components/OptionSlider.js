@@ -20,10 +20,6 @@ const OptionSlider = (props) => {
         props.onOptionUpdated(searchOption.title, searchOption.value);
     };
 
-    function valuetext(value) {
-      return `${value}°C`;
-    }
-
     return (
         <div className="slider">
             <Typography id="discrete-slider" gutterBottom>

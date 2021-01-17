@@ -5,8 +5,21 @@ import Home from "../components/Home";
 import AdvancedSearch from "../components/AdvancedSearch";
 
 const App = () => {
-    const handleSearch = () => {
-
+    const handleSearch = (props) => {
+        console.log(props);
+        const requestOptions = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                keywords: props.keywords,
+                Energy: props.Energy,
+                votes_to_skip: 5,
+                guest_can_pause: true,
+            })
+        };
+        fetch('/api/create-room', requestOptions)
+            .then((response) =>response.json())
+            .then((data) => console.log(data));
     }
 
     return (
