@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import SearchIcon from '@material-ui/icons/Search';
 import PlaylistCard from "./PlaylistCard"
 import Grid from '@material-ui/core/Grid';
-
+import SearchResults from "./SearchResults";
+// import { navigate } from "@reach/router";
 const Home = () => {
     const [keyWords, setKeyWords] = useState("");
 
@@ -19,9 +20,13 @@ const Home = () => {
     };
 
     const submitSearch = (event) => {
-        props.onSearch(note);
-        setKeyWords("");
-        event.preventDefault();
+        // alert('adpiefhawpih');
+        // props.onSearch(note);
+        // setKeyWords("");
+        // event.preventDefault();
+        history.pushState({}, null, '/searchResults');
+        // window.location.href=window.base'searchResults';
+        // navigate('/searchResults');
     };
 
     return (
@@ -73,6 +78,7 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </div>
+            <SearchResults/>
         </div>
     );
 }
