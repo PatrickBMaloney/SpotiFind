@@ -154,6 +154,7 @@ form.search-bar {
       margin: 2% auto;
   }
 
+   /* SEARCH RESULT */
   .search-results-header {
       height: 150px;
       background: linear-gradient(90deg, rgba(148,191,163,1) 0%, rgba(29,185,84,1) 50%, rgba(81,237,237,1) 100%);
@@ -163,4 +164,22 @@ form.search-bar {
 
   .search-results-bar {
       margin-top: -25px !important;
+  }
+
+  .table-container {
+      margin: 100px 10%;
+      width: 80% !important;
+  }
+
+  .MuiTableCell-head {
+      font-weight: 300 !important;
+      color: white !important;
+  }
+
+  .MuiTableCell-body {
+      color: white !important;
+  }
+
+  .MuiIconButton-colorSecondary {
+      color: #1DB954 !important;
   }

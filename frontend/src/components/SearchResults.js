@@ -1,5 +1,12 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import SearchIcon from '@material-ui/icons/Search';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Checkbox from '@material-ui/core/Checkbox';
 
 const SearchResults = () => {
     const params = new URLSearchParams(window.location.search);
@@ -19,6 +26,10 @@ const SearchResults = () => {
         history.pushState({}, null, '/searchResults');
     };
 
+    useEffect(() => {
+        console.log('insert backend call here');
+      });
+
     return(
         <div>
             <div className="search-results-header">
@@ -35,6 +46,29 @@ const SearchResults = () => {
                     onKeyDown={handleKeyDown}
                 />
             </form>
+            <div>
+                <TableContainer className="table-container">
+                    <Table>
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>TITLE</TableCell>
+                                <TableCell>ARTIST</TableCell>
+                                <TableCell>EXCLUDE</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell>dawpi</TableCell>
+                                <TableCell padding="checkbox">
+                                    <Checkbox
+                                    />
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </div>
         </div>
     );
 }
