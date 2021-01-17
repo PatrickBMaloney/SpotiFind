@@ -81,7 +81,6 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </div>
-            <SearchResults/>
         </div>
     );
 }
