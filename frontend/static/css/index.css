@@ -13,6 +13,11 @@ h1 {
     font-weight: 300;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .half {
     width: 50%;
 }
@@ -41,6 +46,7 @@ h1 {
     left: 0;
     position: absolute;
     position: fixed;
+    width: 50%;
 }
 
 .center-text {
@@ -94,7 +100,6 @@ form.search-bar {
 
   .playlist-grid {
       height: 100%;
-      margin-bottom: 5%;
   }
 
   .playlist-card {
@@ -107,7 +112,6 @@ form.search-bar {
 
   .playlist-card h2 {
       padding: 5% 5% 5%;
-
   }
 
   .card-title, .MuiCardContent-root {

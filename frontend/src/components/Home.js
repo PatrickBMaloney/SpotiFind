@@ -37,6 +37,7 @@ const Home = () => {
                         onChange={handleChange}
                         onKeyDown={handleKeyDown} />
                 </form>
+                    <a href="">Advanced Search</a>
             </div>
             <div>
                 <Grid className="playlist-grid" container alignItems="stretch">
