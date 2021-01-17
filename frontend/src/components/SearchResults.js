@@ -8,6 +8,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Checkbox from '@material-ui/core/Checkbox';
 
+const axios = require('axios');
+
 const SearchResults = () => {
     const params = new URLSearchParams(window.location.search);
     const handleChange = (event) => {
@@ -28,6 +30,8 @@ const SearchResults = () => {
 
     useEffect(() => {
         console.log('insert backend call here');
+        const response = axios.get('/api/');
+        console.log(response);
       });
 
     return(
