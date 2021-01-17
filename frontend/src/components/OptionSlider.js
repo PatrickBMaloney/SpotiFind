@@ -11,7 +11,7 @@ const OptionSlider = (props) => {
     const handleChange = (event) => {
         const {name, value} = event.target;
 
-        setSearchOption((prevNote) => {
+        setSearchOption((prevSearchOption) => {
             return {
                 ...prevSearchOption,
                 [name]: value
@@ -27,11 +27,10 @@ const OptionSlider = (props) => {
     return (
         <div className="slider">
             <Typography id="discrete-slider" gutterBottom>
-                Temperature
+                {props.name}
             </Typography>
             <Slider
-                defaultValue={30}
-                // getAriaValueText={valuetext}
+                defaultValue={50}
                 aria-labelledby="discrete-slider"
                 valueLabelDisplay="auto"
                 onChangeCommitted={handleChange}

@@ -141,7 +141,35 @@ form.search-bar {
   }
 
   /* ADVANCED SEARCH */
+  .advanced-search-page hr {
+    margin-top: 20px;
+  }
+
   .advanced-options {
-      width: 90%;
+      width: 70%;
       margin: 2% auto;
+  }
+
+  .MuiSlider-colorSecondary {
+      color: #1DB954;
+  }
+
+  .MuiSlider-track {
+    color: #1DB954;
+  }
+
+  .MuiSlider-thumb {
+    color: #1DB954;
+  }
+
+  .MuiSlider-rail {
+    color: #1DB954;
+  }
+
+  .MuiSlider-mark {
+    color: #1DB954;
+  }
+
+  .MuiSlider-thumbColorSecondary.Mui-focusVisible, .MuiSlider-thumbColorSecondary:hover {
+      box-shadow: 0 0 0 8px  #1DB954;
   }
